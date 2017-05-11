@@ -1,4 +1,4 @@
-# Gitblog - A tool for creating and managing github pages. 
+## Gitblog - A tool for creating and managing github pages. 
 
 
 ### Contributors
