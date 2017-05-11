@@ -46,14 +46,10 @@ then
     echo -e "Electron is not found. Installing electron";
 
     npm install electron -g
- else
-    elect = `$(electron)`
 
-    echo $elect
  fi
 
-    # npm start
-
+ npm start
 
 fi
 
