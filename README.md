@@ -1,8 +1,8 @@
-#Gitblog - A tool for creating and managing github pages. 
+# Gitblog - A tool for creating and managing github pages. 
 
 
-###Contributors
+### Contributors
 
-@madhanhere
-@kkarthik377
-@mohendran
+* @madhanhere
+* @kkarthik377
+* @mohendran
