@@ -29,6 +29,7 @@ function command_exists () {
 }
 
 
+
 #npm install
 
 if [ $? == 0 ]
@@ -49,7 +50,26 @@ then
 
  fi
 
- npm start
+
+
+ electron . &
+
+
+
+ if ! type gulp &> /dev/null;
+ then
+    if [ "$EUID" -ne 0 ]
+    then
+       echo -e "${Red} Gulp ${NC}is not installed. use '${URed}npm install gulp-cli -g${NC}' to install it globally or run this script with ${URed}sudo${NC} permission"
+       exit
+    fi
+
+    echo -e "Gulp is not found. Installing gulp globally";
+    npm install gulp-cli -g
+ fi
+
+ gulp
+
 
 fi
 

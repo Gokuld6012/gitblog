@@ -1,22 +1,24 @@
 {
-  "name": "electron-quick-start",
+  "name": "gitblog",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "An application to create and manage github pages.",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "bash scripts/setup.sh"
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/shaulhameed/gitblog",
   "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "Github",
+    "GithubPages",
+    "blog",
+    "pages"
   ],
-  "author": "GitHub",
+  "author": "shaulhameed",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "~1.6.2"
+    "electron": "~1.6.2",
+    "gulp": "^3.9.1",
+    "gulp-pug": "^3.3.0",
+    "gulp-watch": "^4.3.11"
   }
 }
